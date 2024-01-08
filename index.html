@@ -71,11 +71,13 @@
                     </ul>
                 </li> -->
                 <li class="page-scroll">
+                    <a href="#news">News</a>
+                </li>
+
+                <li class="page-scroll">
                     <a href="#publications">Publications</a>
                 </li>
-                <li class="page-scroll">
-                    <a href="#projects">Projects</a>
-                </li>
+                
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Courses</a>
                 </li>
@@ -117,13 +119,11 @@
 
                 <!-- <h5>Ph.D. Univ. of California - Riverside, USA</h5></h3> -->
 
-            <h4>&nbsp; &nbsp; &nbsp;   Ph.D. student<br>
+            <h4>&nbsp; &nbsp; &nbsp;  Ph.D. student<br>
                &nbsp; &nbsp; &nbsp; Language Technologies Institute<br>
                &nbsp; &nbsp; &nbsp; School of Computer Science<br>
                &nbsp; &nbsp; &nbsp; Carnegie Mellon University<br>
-               &nbsp; &nbsp; &nbsp; Pittsburgh- 15232, PA, USA<br>
-               &nbsp; &nbsp; &nbsp; Tel: <a href="tel:19282657221">+1-928-265-7221</a><br/>
-         
+               &nbsp; &nbsp; &nbsp; Pittsburgh - 15232, PA, USA<br> 
                &nbsp; &nbsp; &nbsp; Email:
             <script language="JavaScript">
                 <!--
@@ -132,7 +132,8 @@
                 -->
             </script><br/>
             <br>
-            &nbsp; &nbsp; &nbsp;<a target="_blank" href="https://drive.google.com/file/d/1d0PMSMYbAH1Z4tMFQezLM9pXZHomwvoG/view?usp=sharing" class="btn-sm btn-primary"> CV (PDF) </a>
+            &nbsp; &nbsp; &nbsp;<a target="_blank" href="https://drive.google.com/file/d/1d0PMSMYbAH1Z4tMFQezLM9pXZHomwvoG/view?usp=sharing" class="btn-sm btn-primary"> CV </a>
+            &nbsp; <a target="_blank" href="https://scholar.google.com/citations?user=iCZtiOsAAAAJ&hl=en&oi=ao" class="btn-sm btn-primary" >Scholar</a>
             &nbsp; <a target="_blank" href="https://dblp.uni-trier.de/pers/hd/d/Dutt:Ritam" class="btn-sm btn-primary" >DBLP</a>   
             &nbsp; <a target="_blank" href="https://www.linkedin.com/in/ritam-dutt-18980021/" class="btn-sm btn-primary" >LinkedIn</a>
             <!-- &nbsp; <a target="_blank" href="https://www.linkedin.com/in/ritam-dutt-18980021/" class="btn-sm btn-primary" >Github</a>   
@@ -166,10 +167,9 @@
             <div class="allshow" style="display:none;" id="tab-1-content">
             <hr class="star-primary">
 
-            <p class="lead"> I am a final year Dual-degree student of the <a target="_blank" href="http://cse.iitkgp.ac.in/">Department of Computer Science and Engineering </a>  of the Indian Institute of Technology Kharagpur. </p>
+            <p class="lead"> I am a senior Ph.D. student at the <a target="_blank" href="https://www.lti.cmu.edu/people/222227970/ritam-dutt">Language Technologies Institute</a> at the Carnegie Mellon Unviersity where I am advised by Dr. Carolyn Rose. </p>
 
-            
-            <p>My research interest lies in the vast domains of social media and social network analysis along with its applications in natural language processing, information retrieval and machine learning. I am motivated by the overarching theme how information can be leveraged to solve a multitude of problems in the online and offline world. As succinctly put by John Naisbitt, “We are drowning in information but starved for knowledge.” My aim is to distill out the relevant knowledge.  </p>
+            <p> I am passionate about using AI and NLP for social good, with a special focus on education and medicine. Specifically, my research investigates where and why NLP models fail to generalize and what can be done to improve generalizability. My current research involves information extraction from biomedical and chemical documents, and integrating structural knowledge with unstructured text. I am also invested in pragmatics and discourse with an emphasis on how to facilitate difficult conversations between teachers and students. I graduated from Indian Institute of Technology Kharagpur, summa cum laude,  with a masters in technology in computer science and engineering where I worked on extracting actionable information from social media texts, information propagation, and computational social science.  </p>
 
                           
                
@@ -195,13 +195,436 @@
             <h2> Publications</h2>
  			<ul>
 
+                <!-- WUGGPT, EMNLP, 2023 -->
+            
+                <li><span class="label label-success">EMNLP'23</span> <a target="_blank" href="https://aclanthology.org/2023.emnlp-main.401/">
+                    Counting the Bugs in ChatGPT's Wugs: A Multilingual Investigation into the Morphological Capabilities of a Large Language Model</a>.<br>
+                    Leonie Weissweiler, Valentin Hofmann, Anjali Kantharuban, Anna Cai, <b>Ritam Dutt</b>, Amey Hengle, Anubha Kabra, Atharva Kulkarni, Abhishek Vijayakumar, Haofei Yu, Hinrich Schuetze, Kemal Oflazer, David Mortensen
+                    <a style="float:right" data-toggle="collapse" data-target="#wuggpt">More details</a><br>
+                    
+                    <!-- <b> Proceedings of the 2023 Conference on Empirical Methods in Natural Language Processing</b>.  -->
+                    
+                    </li>
+                    <div id="wuggpt" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/wuggpt.jpeg" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Large language models (LLMs) have recently reached an impressive level of linguistic capability, prompting comparisons with human language skills. However, there have been relatively few systematic inquiries into the linguistic capabilities of the latest generation of LLMs, and those studies that do exist (i) ignore the remarkable ability of humans to generalize, (ii) focus only on English, and (iii) investigate syntax or semantics and overlook other capabilities that lie at the heart of human language, like morphology. Here, we close these gaps by conducting the first rigorous analysis of the morphological capabilities of ChatGPT in four typologically varied languages (specifically, English, German, Tamil, and Turkish). We apply a version of Berko's (1958) wug test to ChatGPT, using novel, uncontaminated datasets for the four examined languages. We find that ChatGPT massively underperforms purpose-built systems, particularly in English. Overall, our results—through the lens of morphology—cast a new light on the linguistic capabilities of ChatGPT, suggesting that claims of human-like language skills are premature and misleading.
+   
+                    </div>
+                    <br />
+                
+                <!-- GRAILQA++, AACL, 2023 -->
+            
+                <li><span class="label label-success">AACL'23</span> <a target="_blank" href="http://www.afnlp.org/conferences/ijcnlp2023/proceedings/main-long/cdrom/pdf/2023.ijcnlp-long.58.pdf">
+                    GrailQA++: A Challenging Zero-Shot Benchmark for Knowledge Base Question Answering</a>.<br>
+                    <b>Ritam Dutt</b>, Sopan Khosla, Vinayshekhar Bannihatti Kumar, Rashmi Gangadharaiah 
+                    <!-- <b> Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#grailqapp">More details</a>
+                    </li>
+                    <div id="grailqapp" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/grailqapp.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Most benchmarks designed for question answering over knowledge bases (KBQA) operate with the i.i.d. assumption where one encounters the same schema items during inference as those observed during training. Recently, the GrailQA dataset was established
+                        to evaluate zero-shot generalization capabilities of KBQA models as a departure from the
+                        i.i.d. assumption. Reasonable performance
+                        of current KBQA systems on the zero-shot
+                        GrailQA split hints that the field might be moving towards more generalizable systems. In
+                        this work, we observe a bias in the GrailQA
+                        dataset towards simpler one or two-hop questions, which results in an inaccurate assessment
+                        of the aforementioned prowess. We propose
+                        GrailQA++, a challenging zero-shot KBQA
+                        test set that contains more questions relying on
+                        complex reasoning. We leverage the concept of
+                        graph isomorphisms to control the complexity
+                        of the questions and to ensure that our proposed test set has a fair distribution of simple
+                        and complex questions. Existing KBQA models suffer a substantial drop in performance on
+                        our constructed new test set as compared to
+                        the GrailQA zero-shot split. Our analysis reveals how isomorphisms can be used to understand the complementary strengths of different
+                        KBQA models and provide a deeper insight
+                        into model mispredictions. Overall, our paper
+                        highlights the non-generalizability of existing
+                        models and the necessity for designing more
+                        challenging benchmarks. Our dataset is available <a href="https://github.com/sopankhosla/GrailQA-PlusPlus"> here  </a>.
+   
+                    </div>
+                    <br />
+
+                
+                <!-- AMR4RE, ACL, 2023 -->
+            
+                <li><span class="label label-success">ACL'23</span> <a target="_blank" href="https://aclanthology.org/2023.acl-long.414/">
+                    Linguistic representations for fewer-shot relation extraction across domains</a>.<br>
+                    Sireesh Gururaja, <b>Ritam Dutt</b>, Tinglong Liao, Carolyn Rosé 
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#amr4re">More details</a>
+                    </li>
+                    <div id="amr4re" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/amr4re.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Recent work has demonstrated the positive impact of incorporating linguistic representations as additional context and scaffolds on the in-domain performance of several NLP tasks. We extend this work by exploring the impact of linguistic representations on cross-domain performance in a few-shot transfer setting. An important question is whether linguistic representations enhance generalizability by providing features that function as cross-domain pivots. We focus on the task of relation extraction on three datasets of procedural text in two domains, cooking and materials science. Our approach augments a popular transformer-based architecture by alternately incorporating syntactic and semantic graphs constructed by freely available off-the-shelf tools. We examine their utility for enhancing generalization, and investigate whether earlier findings, e.g. that semantic representations can be more helpful than syntactic ones, extend to relation extraction in multiple domains. We find that while the inclusion of these graphs results in significantly higher performance in few-shot transfer, both types of graph exhibit roughly equivalent utility.
+   
+                    </div>
+                    <br />
+
+                <!-- nongenkbqa, Insights, EACL 2023 -->
+            
+                <li><span class="label label-warning">Insights, EACL'23</span> <a target="_blank" href="https://aclanthology.org/2023.insights-1.11">
+                    Exploring the Reasons for Non-generalizability of KBQA systems</a>.<br>
+                    Sopan Khosla*, <b>Ritam Dutt*</b>, Vinayshekhar Bannihatti Kumar, Rashmi Gangadharaiah
+                    <!-- <b> Proceedings of theThe Fourth Workshop on Insights from Negative Results in NLP</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#nongenkbqa">More details</a>
+                    </li>
+                    <div id="nongenkbqa" class="collapse">
+                       <br />
+                        <!-- <div align="center">
+                        <img id="mobile-img" src="images/nongenkbqa.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div> -->
+                        Recent research has demonstrated impressive generalization capabilities of several Knowledge Base Question Answering (KBQA) models on the GrailQA dataset. We inspect whether these models can generalize to other datasets in a zero-shot setting. We notice a significant drop in performance and investigate the causes for the same. We observe that the models are dependent not only on the structural complexity of the questions, but also on the linguistic styles of framing a question. Specifically, the linguistic dimensions corresponding to explicitness, readability, coherence, and grammaticality have a significant impact on the performance of state-of-the-art KBQA models. Overall our results showcase the brittleness of such models and the need for creating generalizable systems.
+   
+                    </div>
+                    <br />
+                
+                <!-- PERKGQA, NAACL, 2023 -->
+            
+                <li><span class="label label-success">NAACL'22</span> <a target="_blank" href="https://aclanthology.org/2022.findings-naacl.19/">
+                    PerKGQA: Question Answering over Personalized Knowledge Graphs</a>.<br>
+                    <b>Ritam Dutt</b>, Kasturi Bhattacharjee, Rashmi Gangadharaiah, Dan Roth, Carolyn Rose
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#perkgqa">More details</a>
+                    </li>
+                    <div id="perkgqa" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/perkgqa.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Previous studies on question answering over knowledge graphs have typically operated over a single knowledge graph (KG). This KG is assumed to be known a priori and is lever- aged similarly for all users' queries during inference. However, such an assumption is not applicable to real-world settings, such as health- care, where one needs to handle queries of new users over unseen KGs during inference. Furthermore, privacy concerns and high computational costs render it infeasible to query the single KG that has information about all users while answering a specific user's query. The above concerns motivate our question answer- ing setting over personalized knowledge graphs (PERKGQA) where each user has restricted access to their KG. We observe that current state-of-the-art KGQA methods that require learning prior node representations fare poorly. We propose two complementary approaches, PATHCBR and PATHRGCN for PERKGQA. The former is a simple non-parametric technique that employs case-based reasoning, while the latter is a parametric approach using graph neural networks. Our proposed methods circumvent learning prior representations, can generalize to unseen KGs, and outperform strong baselines on an academic and an internal dataset by 6.5% and 10.5%.
+   
+                    </div>
+                    <br />
+
+                <!--R3, Multidoc2dial, ACL 2022 -->
+            
+                <li><span class="label label-warning">DialDoc, ACL'22</span> <a target="_blank" href="https://aclanthology.org/2023.insights-1.11">
+                    R3 : Refined Retriever-Reader pipeline for Multidoc2dial</a>.<br>
+                    Srijan Bansal, Suraj Tripathi, Sumit Agarwal, Sireesh Gururaja, Aditya Srikanth Veerubhotla, <b>Ritam Dutt</b>, Teruko Mitamura, Eric Nyberg
+                    <!-- <b> Proceedings of the Second DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#r3">More details</a>
+                    </li>
+                    <div id="r3" class="collapse">
+                       <br />
+                        <div align="center">
+                        <img id="mobile-img" src="images/r3.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        In this paper, we present our submission to the DialDoc shared task based on the MultiDoc2Dial dataset. MultiDoc2Dial is a conversational question answering dataset that grounds dialogues in multiple documents. The task involves grounding a user's query in a document followed by generating an appropriate response. We propose several improvements over the baseline's retriever-reader architecture to aid in modeling goal-oriented dialogues grounded in multiple documents. Our proposed approach employs sparse representations for passage retrieval, a passage re-ranker, the fusion-in-decoder architecture for generation, and a curriculum learning training paradigm. Our approach shows a 12 point improvement in BLEU score compared to the baseline RAG model.
+                    </div>
+                    <br />
+
+
+                
+                <!-- Medtype, JBI, 2021 -->
+            
+                <li><span class="label label-success">JBI'21</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1016/j.jbi.2021.103880">
+                    Improving broad-coverage medical entity linking with semantic type prediction and large-scale datasets </a>.<br>
+                    Shikhar Vashishth , Denis Newman-Griffis, Rishabh Joshi, <b>Ritam Dutt</b>, Carolyn P. Rose
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#medtype">More details</a>
+                    </li>
+                    <div id="medtype" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/medtype.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Medical entity linking is the task of identifying and standardizing medical concepts referred to in an unstructured text. Most of the existing methods adopt a three-step approach of (1) detecting mentions, (2) generating a list of candidate concepts, and finally (3) picking the best concept among them. In this paper, we probe into alleviating the problem of overgeneration of candidate concepts in the candidate generation module, the most under-studied component of medical entity linking. For this, we present MedType, a fully modular system that prunes out irrelevant candidate concepts based on the predicted semantic type of an entity mention. We incorporate MedType into five off-the-shelf toolkits for medical entity linking and demonstrate that it consistently improves entity linking performance across several benchmark datasets. To address the dearth of annotated training data for medical entity linking, we present WikiMed and PubMedDS, two large-scale medical entity linking datasets, and demonstrate that pre-training MedType on these datasets further improves entity linking performance. We make our source code and datasets publicly available for medical entity linking research.
+   
+                    </div>
+                    <br />
+                
+
+                <!-- hategnn HT, 2021 -->
+            
+                <li><span class="label label-success">HT'21</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3465336.3475106">
+                    You too brutus! trapping hateful users in social media: Challenges, solutions & insights </a>.<br>
+                    Mithun Das, Punyajoy Saha, <b>Ritam Dutt</b>, Pawan Goyal, Animesh Mukherjee, Binny Mathew
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#hategnn">More details</a>
+                    </li>
+                    <div id="hategnn" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/hategnn.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Hate speech is regarded as one of the crucial issues plaguing the online social media. The current literature on hate speech detection leverages primarily the textual content to find hateful posts and subsequently identify hateful users. However, this methodology disregards the social connections between users. In this paper, we run a detailed exploration of the problem space and investigate an array of models ranging from purely textual to graph based to finally semi-supervised techniques using Graph Neural Networks (GNN) that utilize both textual and graph-based features. We run exhaustive experiments on two datasets -- Gab, which is loosely moderated and Twitter, which is strictly moderated. Overall the AGNN model achieves 0.791 macro F1-score on the Gab dataset and 0.780 macro F1-score on the Twitter dataset using only 5% of the labeled instances, considerably outperforming all the other models.
+   
+                    </div>
+                    <br />
+
+                <!--JARS, Doc2dial, ACL 2021 -->
+            
+                <li><span class="label label-warning">DialDoc, ACL'21</span> <a target="_blank" href="https://aclanthology.org/2021.dialdoc-1.13">
+                    Team JARS: DialDoc Subtask 1 - Improved Knowledge Identification with Supervised Out-of-Domain Pretraining</a>.<br>
+                    Sopan Khosla, Justin Lovelace, <b>Ritam Dutt</b>, Adithya Pratapa
+                    <!-- <b> Proceedings of the Second DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#jars">More details</a>
+                    </li>
+                    <div id="jars" class="collapse">
+                       <br />
+                        <div align="center">
+                        <img id="mobile-img" src="images/jars.png" width="70%" border="0" height="70%" alt=""></a><br>
+                        </div>
+                        In this paper, we discuss our submission for DialDoc subtask 1. The subtask requires systems to extract knowledge from FAQ-type documents vital to reply to a user's query in a conversational setting. We experiment with pretraining a BERT-based question-answering model on different QA datasets from MRQA, as well as conversational QA datasets like CoQA and QuAC. Our results show that models pretrained on CoQA and QuAC perform better than their counterparts that are pretrained on MRQA datasets. Our results also indicate that adding more pretraining data does not necessarily result in improved performance. Our final model, which is an ensemble of AlBERT-XL pretrained on CoQA and QuAC independently, with the chosen answer having the highest average probability score, achieves an F1-Score of 70.9% on the official test-set.
+                    </div>
+                    <br />
+
+                <!-- fairrank SIGIR, 2021 -->
+            
+                <li><span class="label label-success">SIGIR'21</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3404835.3462850">
+                    When fair ranking meets uncertain inference </a>.<br>
+                    Avijit Ghosh, <b>Ritam Dutt</b>, Christo Wilson
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#fairrank">More details</a>
+                    </li>
+                    <div id="fairrank" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/fairrank.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Existing fair ranking systems, especially those designed to be demographically fair, assume that accurate demographic information about individuals is available to the ranking algorithm. In practice, however, this assumption may not hold — in real-world contexts like ranking job applicants or credit seekers, social and legal barriers may prevent algorithm operators from collecting peoples' demographic information. In these cases, algorithm
+                        operators may attempt to infer peoples' demographics and then supply these inferences as inputs to the ranking algorithm.
+                        In this study, we investigate how uncertainty and errors in demographic inference impact the fairness offered by fair ranking algorithms. Using simulations and three case studies with real datasets, we show how demographic inferences drawn from real systems can lead to unfair rankings. Our results suggest that
+                        developers should not use inferred demographic data as input to fair ranking algorithms, unless the inferences are extremely accurate.
+   
+                    </div>
+                    <br />
+
+                <!-- site dcs, 2021 -->
+            
+                <li><span class="label label-success">SITE'21</span> <a target="_blank" href="https://www.learntechlib.org/noaccess/219277/">
+                    Investigating adoption and collaboration with digital clinical simulations by teacher educators </a>.<br>
+                    <b>Ritam Dutt</b>, Garron Hillaire, Alison Fang, Laura Larke, Carolyn Rosé, Justin Reich
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#dcs">More details</a>
+                    </li>
+                    <div id="dcs" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/dcs.png" width="60%" border="0" height="60%" alt=""></a><br>
+                        </div>
+                        In this study, we examine the outcome of a four-day workshop with 24 Teacher Educators (fellows) who were supported in using two tools - Teacher Moments (TM) and Eliciting Learner Knowledge (ELK). The tools are designed for authoring, implementing, and research Digital Clinical Simulations in education. The simulations centered around issues of equity in K-12 computer science education to provide in-/pre-service teachers with opportunities to practice high-stakes interactions in low-stakes settings. We operationalize the technology adoption of the fellows through the notions of self-efficacy, help-seeking, and technology concerns to recognize the potential barriers they faced in transitioning from authoring to implementing and research design. Finally, we note the fellows' implementation plans in the ensuing academic year and examine potential collaborations amongst them using social network analysis. Our results reveal how a small group of fellows, spanning major regions of the U.S., generate a broad range of scenarios, as well as clusters of scenarios, enabling simulation-based research supported by collaboration.
+                    </div>
+                    <br />
+
+                 <!-- resper, 2021 -->
+            
+                 <li><span class="label label-success">EACL'21</span> <a target="_blank" href="https://aclanthology.org/2021.eacl-main.7/">
+                    ResPer: Computationally Modelling Resisting Strategies in Persuasive Conversations </a>.<br>
+                    <b>Ritam Dutt*</b>, Sayan Sinha*, Rishabh Joshi, Surya Shekhar Chakraborty, Meredith Riggs, Xinru Yan, Haogang Bao, Carolyn Rose
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#resper">More details</a>
+                    </li>
+                    <div id="resper" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/resper.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Modelling persuasion strategies as predictors of task outcome has several real-world applications and has received considerable attention from the computational linguistics community. However, previous research has failed to account for the resisting strategies employed by an individual to foil such persuasion attempts. Grounded in prior literature in cognitive and social psychology, we propose a generalised framework for identifying resisting strategies in persuasive conversations. We instantiate our framework on two distinct datasets comprising persuasion and negotiation conversations. We also leverage a hierarchical sequence-labelling neural architecture to infer the aforementioned resisting strategies automatically. Our experiments reveal the asymmetry of power roles in non-collaborative goal-directed conversations and the benefits accrued from incorporating resisting strategies on the final conversation outcome. We also investigate the role of different resisting strategies on the conversation outcome and glean insights that corroborate with past findings. We also make the code and the dataset of this work publicly available at <a href="https://github.com/americast/resper">here</a>.
+                    </div>
+                    <br />
+
+                <!-- clef, 2021 -->
+            
+                <li><span class="label label-warning">CLEF'21</span> <a target="_blank" href="https://ceur-ws.org/Vol-2936/paper-59.pdf">
+                    A pipelined approach to Anaphora Resolution in Chemical Patents </a>.<br>
+                    <b>Ritam Dutt*</b>, Sopan Khosla*, Carolyn Rose
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#clef">More details</a>
+                    </li>
+                    <div id="clef" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/clef.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        We present our pipelined approach for the sub-task of anaphora resolution in chemical patents as part of the ChEMU shared task at CLEF, 2021. Our approach consists of independently trained mention extraction and relation classification modules. For the former, we set up a BERT-CRF and leverage the BIO scheme to represent the mentions. We include a post-processing step after mention extraction to correct boundary errors and handle nested mentions. For relation classification, we develop a BERT-based model that captures the context between the two candidate mentions to predict the relation between the two. Our final submission ensembles BERT models pretrained on different types of clinical data and achieves a Strict F1 of 0.785 on the official test set.
+                    </div>
+                    <br />
+
+                  <!-- propaganda-detection, 2020 -->
+            
+                  <li><span class="label label-warning">Semeval, COLING'20</span> <a target="_blank" href="https://aclanthology.org/2020.semeval-1.230/">
+                    LTIatCMU at SemEval-2020 Task 11: Incorporating Multi-Level Features for Multi-Granular Propaganda Span Identification </a>.<br>
+                    Sopan Khosla*, Rishabh Joshi*, <b>Ritam Dutt*</b>, Alan W Black, Yulia Tsvetkov
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#prop-detection">More details</a>
+                    </li>
+                    <div id="prop-detection" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/prop-detection.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        In this paper we describe our submission for the task of Propaganda Span Identification in news articles. We introduce a BERT-BiLSTM based span-level propaganda classification model that identifies which token spans within the sentence are indicative of propaganda. The ”multi-granular” model incorporates linguistic knowledge at various levels of text granularity, including word, sentence and document level syntactic, semantic and pragmatic affect features, which significantly improve model performance, compared to its language-agnostic variant. To facilitate better representation learning, we also collect a corpus of 10k news articles, and use it for fine-tuning the model. The final model is a majority-voting ensemble which learns different propaganda class boundaries by leveraging different subsets of incorporated knowledge.
+                    </div>
+                    <br />
+                
+                    <!-- face-acts, 2020 -->
+
+                    <li><span class="label label-success">EMNLP'20</span> <a target="_blank" href="https://aclanthology.org/2020.emnlp-main.605/">
+                        Keeping Up Appearances: Computational Modeling of Face Acts in Persuasion Oriented Discussions </a>.<br>
+                        <b>Ritam Dutt</b>, Rishabh Joshi, Carolyn Rose.
+                        <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                        <a style="float:right" data-toggle="collapse" data-target="#faceact">More details</a>
+                        </li>
+                        <div id="faceact" class="collapse">
+                           <br />
+                           <div align="center">
+                            <img id="mobile-img" src="images/faceact.png" width="80%" border="0" height="80%" alt=""></a><br>
+                            </div>
+                            The notion of face refers to the public self-image of an individual that emerges both from the individual's own actions as well as from the interaction with others. Modeling face and understanding its state changes throughout a conversation is critical to the study of maintenance of basic human needs in and through interaction. Grounded in the politeness theory of Brown and Levinson (1978), we propose a generalized framework for modeling face acts in persuasion conversations, resulting in a reliable coding manual, an annotated corpus, and computational models. The framework reveals insights about differences in face act utilization between asymmetric roles in persuasion conversations. Using computational models, we are able to successfully identify face acts as well as predict a key conversational outcome (e.g. donation success). Finally, we model a latent representation of the conversational state to analyze the impact of predicted face acts on the probability of a positive conversational outcome and observe several correlations that corroborate previous findings.
+                        </div>
+                        <br />
+
+                <!-- narmada, 2020 -->
+            
+                  <li><span class="label label-warning">SocialNLP, ACL'20</span> <a target="_blank" href="https://aclanthology.org/2020.socialnlp-1.3/">
+                    NARMADA: Need and Available Resource Managing Assistant for Disasters and Adversities</a>.<br>
+                    Kaustubh Hiware*, <b>Ritam Dutt*</b>, Sayan Sinha, Sohan Patro, Kripa Ghosh, Saptarshi Ghosh
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#narmada">More details</a>
+                    </li>
+                    <div id="narmada" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/narmada.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Although a lot of research has been done on utilising Online Social Media during disasters, there exists no system for a specific task that is critical in a post-disaster scenario – identifying resource-needs and resource-availabilities in the disaster-affected region, coupled with their subsequent matching. To this end, we present NARMADA, a semi-automated platform which leverages the crowd-sourced information from social media posts for assisting post-disaster relief coordination efforts. The system employs Natural Language Processing and Information Retrieval techniques for identifying resource-needs and resource-availabilities from microblogs, extracting resources from the posts, and also matching the needs to suitable availabilities. The system is thus capable of facilitating the judicious management of resources during post-disaster relief operations.
+                    </div>
+                    <br />
+
+                <!-- cancer-misinfo, 2020 -->
+
+                <li><span class="label label-success">AAAI'20</span> <a target="_blank" href="https://cdn.aaai.org/ojs/7359/7359-28-10589-1-10-20200601.pdf">
+                    Analysing the extent of misinformation in cancer related tweets </a>.<br>
+                    Rakesh Bal*, Sayan Sinha*, Swastika Dutta, Rishabh Joshi, Sayan Ghosh, <b>Ritam Dutt</b>
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#cancer-misinfo">More details</a>
+                    </li>
+                    <div id="cancer-misinfo" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/cancer-misinfo.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Twitter has become one of the most sought after places to discuss a wide variety of topics, including medically relevant issues such as cancer. This helps spread awareness regarding the various causes, cures and prevention methods of cancer. However, no proper analysis has been performed, which discusses the validity of such claims. In this work, we aim to tackle the misinformation spread in such platforms. We collect and present a dataset regarding tweets which talk specifically about cancer and propose an attention-based deep learning model for automated detection of misinformation along with its spread. We then do a comparative analysis of the linguistic variation in the text corresponding to misinformation and truth. This analysis helps us gather relevant insights on various social aspects related to misinformed tweets.
+                    </div>
+                    <br />
+                
+                <!-- Anonymity in Quora -->
+            
+                <li><span class="label label-success">Socinfo'19</span> <a target="_blank" href="https://arxiv.org/pdf/1811.07223.pdf">
+                    "Deep Dive into Anonymity: A Large Scale Analysis of Quora Questions"</a>.<br>
+                    Binny Mathew*, <b>Ritam Dutt*</b>, Suman Kalyan Maity, Pawan Goyal, Animesh Mukherjee
+                     <a style="float:right" data-toggle="collapse" data-target="#anonymity">More details</a>
+                    </li>
+                    <div id="anonymity" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/anon-1.png" width="32%" border="0" height="32%" alt=""></a>
+                        <img id="mobile-img" src="images/anon-2.png" width="30%" border="0" height="30%" alt=""></a><br>
+                        </div>   
+                        Anonymity forms an integral and important part of our digital life. It enables us to express our true selves without the fear
+                       of judgment. In this paper, we investigate the different aspects of anonymity in the social Q&A site Quora. The choice
+                       of Quora is motivated by the fact that this is one of the rare
+                       social Q&A sites that allow users to explicitly post anonymous questions and such activity in this forum has become normative rather than a taboo. Through an analysis of 5.1
+                       million questions, we observe that at a global scale almost
+                       no difference manifests between the linguistic structure of the
+                       anonymous and the non-anonymous questions. We find that
+                       topical mixing at the global scale to be the primary reason for
+                       the absence. However, the differences start to feature once we
+                       “deep dive” and (topically) cluster the questions and compare
+                       the clusters that have high volumes of anonymous questions
+                       with those that have low volumes of anonymous questions.
+                       In particular, we observe that the choice to post the question as anonymous is dependent on the user's perception of
+                       anonymity and they often choose to speak about depression,
+                       anxiety, social ties and personal issues under the guise of
+                       anonymity. We further perform personality trait analysis and
+                       observe that the anonymous group of users has positive correlation with extraversion, agreeableness, and negative correlation with openness. Subsequently, to gain further insights, we build an anonymity grid to identify the differences in the perception on anonymity of the user posting the question and the
+                       community of users answering it. We also look into the first
+                       response time of the questions and observe that it is lowest for
+                       topics which talk about personal and sensitive issues, which
+                       hints toward a higher degree of community support and user
+                       engagement.
+                    </div>
+                    <br />
+
+
+
+                
+                <!-- disaster-ipm, 2019 -->
+
+                <li><span class="label label-success">IPM'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1016/j.ipm.2019.05.010">
+                    Utilizing microblogs for assisting post-disaster relief operations via matching resource needs and availabilities </a>.<br>
+                    <b>Ritam Dutt</b>, Moumita Basu, Kripabandhu Ghosh, Saptarshi Ghosh
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#disaster-ipm">More details</a>
+                    </li>
+                    <div id="disaster-ipm" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/osmdis-1.png" width="40%" border="0" height="60%" alt=""></a>
+                        &nbsp;
+                        <img id="mobile-img" src="images/osmdis-2.png" width="40%" border="0" height="60%" alt=""></a><br>
+                        </div>   
+                        During a disaster event, two types of information that are especially useful for coordinating relief operations are needs and availabilities of resources (e.g., food, water, medicines) in the affected region. Information posted on microblogging sites is increasingly being used for assisting post-disaster relief operations. In this context, two practical challenges are (i) to identify tweets that inform about resource needs and availabilities (termed as need-tweets and availability-tweets, respectively), and (ii) to automatically match needs with appropriate availabilities. While several works have addressed the first problem, there has been little work on automatically matching needs with availabilities. The few prior works that attempted matching only considered the resources, and no attempt has been made to understand other aspects of needs/availabilities that are essential for matching in practice. In this work, we develop a methodology for understanding five important aspects of need-tweets and availability-tweets, including what resource and what quantity is needed/available, the geographical location of the need/availability, and who needs / is providing the resource. Understanding these aspects helps us to address the need-availability matching problem considering not only the resources, but also other factors such as the geographical proximity between the need and the availability. To the best of our knowledge, this study is the first attempt to develop methods for understanding the semantics of need-tweets and availability-tweets. We also develop a novel methodology for matching need-tweets with availability-tweets, considering both resource similarity and geographical proximity. Experiments on two datasets corresponding to two disaster events, demonstrate that our proposed methods perform substantially better matching than those in prior works. Additionally, our proposed methodologies are reusable across different types of disaster events.
+                    </div>
+                    <br />
+                    
+                <!-- hate-difussion, 2019 -->
+
+                <li><span class="label label-success">WebSci'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3292522.3326034">
+                    Spread of Hate Speech in Online Social Media </a>.<br>
+                    <b>Ritam Dutt</b>, Moumita Basu, Kripabandhu Ghosh, Saptarshi Ghosh
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#hate-diffusion">More details</a>
+                    </li>
+                    <div id="hate-diffusion" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/hate-diffusion.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+
+                        Hate speech is considered to be one of the major issues currently plaguing the online social media. With online hate speech culminating in gruesome scenarios like the Rohingya genocide in Myanmar, anti-Muslim mob violence in Sri Lanka, and the Pittsburgh synagogue shooting, there is a dire need to understand the dynamics of user interaction that facilitate the spread of such hateful content. In this paper, we perform the first study that looks into the diffusion dynamics of the posts made by hateful and non-hateful users on Gab (Gab.com). We collect a massive dataset of 341K users with 21M posts and investigate the diffusion of the posts generated by hateful and non-hateful users. We observe that the content generated by the hateful users tend to spread faster, farther and reach a much wider audience as compared to the content generated by normal users. We further analyze the hateful and non-hateful users on the basis of their account and network characteristics. An important finding is that the hateful users are far more densely connected among themselves. Overall, our study provides the first cross-sectional view of how hateful users diffuse hate content in online social media.
+                    </div>
+                    <br />
+
+                <!-- public-sphere2, 2019 -->
+
+                <li><span class="label label-success">ECIR'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3292522.3326034">
+                    Public Sphere 2.0: Targeted Commenting in Online News Media </a>.<br>
+                    Ankan Mullick, Sayan Ghosh*, <b>Ritam Dutt*</b>, Avijit Ghosh*, Abhijnan Chakraborty
+                    <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
+                    <a style="float:right" data-toggle="collapse" data-target="#public-sphere2">More details</a>
+                    </li>
+                    <div id="public-sphere2" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/public-sphere2.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+
+                        With the increase in online news consumption, to maximize advertisement revenue, news media websites try to attract and retain their readers on their sites. One of the most effective tools for reader engagement is commenting, where news readers post their views as comments against the news articles. Traditionally, it has been assumed that the comments are mostly made against the full article. In this work, we show that present commenting landscape is far from this assumption. Because the readers lack the time to go over an entire article, most of the comments are relevant to only particular sections of an article. In this paper, we build a system which can automatically classify comments against relevant sections of an article. To implement that, we develop a deep neural network based mechanism to find comments relevant to any section and a paragraph wise commenting interface to showcase them. We believe that such a data driven commenting system can help news websites to further increase reader engagement.
+                    </div>
+                    <br />
+
+                
+
+
                 <!-- SAVITR,
                 SMERP, 2018 -->
             
-                 <li><span class="label label-success">SMERP'18</span> <a target="_blank" href="http://delivery.acm.org/10.1145/3200000/3191623/p1643-dutt.pdf?ip=203.110.242.6&id=3191623&acc=OPENTOC&key=045416EF4DDA69D9%2EA3AF15239BC08E05%2E4D4702B0C3E38B35%2E4DD68F0663C025AA&__acm__=1542494771_18914d174472ec95214a2235672eac21">
-                 "SAVITR:A System for Real-time Location Extraction from Microblogs during Emergencies"</a>, Ritam Dutt, Kaustubh Hiware, Avijit Ghosh, Rameshwar Bhaskaran <br>
-                 <b> Proceedings of the 2018 World Wide Web Conference:
-                 Exploitation of Social Media for Emergency Relief and Preparedness</b>. <a style="float:right" data-toggle="collapse" data-target="#savitr">More details</a>
+                 <li><span class="label label-warning">SMERP, WWW'18</span> <a target="_blank" href="http://delivery.acm.org/10.1145/3200000/3191623/p1643-dutt.pdf?ip=203.110.242.6&id=3191623&acc=OPENTOC&key=045416EF4DDA69D9%2EA3AF15239BC08E05%2E4D4702B0C3E38B35%2E4DD68F0663C025AA&__acm__=1542494771_18914d174472ec95214a2235672eac21">
+                 "SAVITR:A System for Real-time Location Extraction from Microblogs during Emergencies"</a>. <br><b>Ritam Dutt</b>, Kaustubh Hiware, Avijit Ghosh, Rameshwar Bhaskaran. <a style="float:right" data-toggle="collapse" data-target="#savitr">More details</a>
                  </li>
                  <div id="savitr" class="collapse">
                     <br />
@@ -220,8 +643,7 @@
                  NAACL  -->
 
 
-                  <li><span class="label label-success">NAACL'18</span> <a target="_blank" href="http://aclweb.org/anthology/N18-5004">"CL Scholar: The ACL Anthology Knowledge Graph Miner"</a>, Mayank Singh, Pradeep Dogga, Sohan Patro, Dhiraj Barnwal, Ritam Dutt, Rajarshi Haldar, Pawan Goyal and Animesh Mukherjee<br> 
-                  <b>Proceedings of the 2018 Conference of the North American Chapter of the Association for Computational Linguistics: Demonstrations .</b> <a style="float:right" data-toggle="collapse" data-target="#clscholar">More details</a>
+                  <li><span class="label label-success">NAACL'18</span> <a target="_blank" href="http://aclweb.org/anthology/N18-5004">"CL Scholar: The ACL Anthology Knowledge Graph Miner."</a> Mayank Singh, Pradeep Dogga, Sohan Patro, Dhiraj Barnwal, <b>Ritam Dutt</b>, Rajarshi Haldar, Pawan Goyal and Animesh Mukherjee<a style="float:right" data-toggle="collapse" data-target="#clscholar">More details</a>
                  </li>
                  <div id="clscholar" class="collapse">
                     <br />
@@ -254,16 +676,12 @@
 
                  </div>
                  <br />
-
+                
 
                  <!-- FB ADS ,
                  ICIIT- 2018 -->
 
-                  <li><span class="label label-success">ICIIT'18</span> <a target="_blank" href="http://aclweb.org/anthology/N18-5004">"Senator, We Sell Ads:" Analysis of the 2016 Russian Facebook Ads Campaign.</a>, Ritam Dutt, Ashok Deb, and Emilio Ferrara <br> 
-
-                  <b>Third International Conference on Intelligent Information Technologies, 2018.</b>  
-
-                  <a style="float:right" data-toggle="collapse" data-target="#fbads">More details</a>
+                <li><span class="label label-success">ICIIT'18</span> <a target="_blank" href="http://aclweb.org/anthology/N18-5004">"Senator, We Sell Ads:" Analysis of the 2016 Russian Facebook Ads Campaign. </a><b>Ritam Dutt</b>, Ashok Deb, and Emilio Ferrara. <a style="float:right" data-toggle="collapse" data-target="#fbads">More details</a>
                  </li>
                  <div id="fbads" class="collapse">
                     <br />
@@ -284,7 +702,7 @@
                         parties associated with them. We also studied the effectiveness of Ads
                         on an individual, campaign and party basis. The most effective ads tend
                         to have less positive sentiment, focus on past events and are more specific and personalized in nature. The more effective campaigns also show such similar characteristics. The campaigns’ duration and promotion of the Ads suggest a desire to sow division rather than sway the election.
-                <br>
+                    <br>
                     
                  </div>
                  <br />
@@ -299,147 +717,43 @@
 
 
 
-<section id="projects">
+
+<!-- Achievements Section -->
+<section id="awards">
     <div class="container lead">
         <div style="text-align: left; margin-top:10px" class="col-md-12">
 
-            <i class="noshow" style="display:none;" id="tab-3">
-                <button class="btn btn-default btn-lg btn-block" style="display: block; width: 100%;" onclick="javascript:$('#tab-3-content').toggle();">Projects  <span class="glyphicon glyphicon-chevron-right"></span></button>
+            <i class="noshow" style="display:none;" id="tab-1">
+                <button class="btn btn-default btn-lg btn-block"  style="display: block; width: 100%;" onclick="javascript:$('#tab-4-content').toggle();">Courses  <span class="glyphicon glyphicon-chevron-right"></span></button>
             </i>
-            <div class="allshow" style="display:none;" id="tab-3-content">
+            <div class="allshow" style="display:none;" id="tab-4-content">
             <hr class="star-primary">
+            <h2>Achievements</h2>
+                
+            <!--- Write a list of achievements as an itemized list-->
 
-            <h2> Projects</h2>
             <ul>
+                <li> Nominated for the Best Paper Award at Spa-NLP Semi-Parametric Methods in NLP Workshop, collocated with ACL, 2022.  </li>
+                <li> Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, co-located with ACL 2022. </li>
+                <li> Achieved the highest score in the Shared Task at CLEF, Conference and Labs of the Evaluation Forum, 2021. </li>
+                <li> Awarded the Ted Nelson Newcomer Award at Hypertext, 32rd ACM Conference on Hypertext and Social Media, 2021. </li>
+                <li> Best Paper Award at SITE, Society for Information Technology \& Teacher Education, 2021.  </li>
+                <li> Best Paper Award (Honorable Mention) at WebSci, 10th ACM Conference on Web Science, 2019. </li>
+                <li> Best Poster Presentation at  ECIR, European Conference Information Retrieval, 2019. </li>
+                <li> Nomination for Best Paper at SocInfo, Social Informatics, 2019. </li>
+                <li> One of the 5 recipients of the SIGWEB student travel grant for attending WebSci, 2019.  </li>
+                <li> Batch Topper: Joint Recipient of the Institute Silver Medal in Computer Science and Engineering at IIT Kharagpur. </li>
+                <li> Batch Topper: Secured distinction with 97.5\% in ISC, (High School or Class 12). </li>
+            </ul>
+            </div>
 
-                <!-- Anonymity in Quora, community aspect etc etc -->
+            <!-- Natural Language Processing, Social Computing, Information Retrieval, Complex Networks, Machine Learning, Deep Learning, Artificial Intelligence, Scalable Data Mining. -->
+
             
-                 <li><span class="label label-success">Anonymity in Quora</span> <a target="_blank" href="https://arxiv.org/pdf/1811.07223.pdf">
-                 "Deep Dive into Anonymity: A Large Scale Analysis of Quora Questions"</a>, Binny Mathew, Ritam Dutt, Suman Kalyan Maity, Pawan Goyal, Animesh Mukherjee
-                  <a style="float:right" data-toggle="collapse" data-target="#anonymity">More details</a>
-                 </li>
-                 <div id="anonymity" class="collapse">
-                    <br />
-                    <div align="center">
-                     <img id="mobile-img" src="images/anon-1.png" width="32%" border="0" height="32%" alt=""></a>
-                     <img id="mobile-img" src="images/anon-2.png" width="30%" border="0" height="30%" alt=""></a><br>
-                     </div>   
-                     Anonymity forms an integral and important part of our digital life. It enables us to express our true selves without the fear
-                    of judgment. In this paper, we investigate the different aspects of anonymity in the social Q&A site Quora. The choice
-                    of Quora is motivated by the fact that this is one of the rare
-                    social Q&A sites that allow users to explicitly post anonymous questions and such activity in this forum has become normative rather than a taboo. Through an analysis of 5.1
-                    million questions, we observe that at a global scale almost
-                    no difference manifests between the linguistic structure of the
-                    anonymous and the non-anonymous questions. We find that
-                    topical mixing at the global scale to be the primary reason for
-                    the absence. However, the differences start to feature once we
-                    “deep dive” and (topically) cluster the questions and compare
-                    the clusters that have high volumes of anonymous questions
-                    with those that have low volumes of anonymous questions.
-                    In particular, we observe that the choice to post the question as anonymous is dependent on the user’s perception of
-                    anonymity and they often choose to speak about depression,
-                    anxiety, social ties and personal issues under the guise of
-                    anonymity. We further perform personality trait analysis and
-                    observe that the anonymous group of users has positive correlation with extraversion, agreeableness, and negative correlation with openness. Subsequently, to gain further insights, we build an anonymity grid to identify the differences in the perception on anonymity of the user posting the question and the
-                    community of users answering it. We also look into the first
-                    response time of the questions and observe that it is lowest for
-                    topics which talk about personal and sensitive issues, which
-                    hints toward a higher degree of community support and user
-                    engagement.
-                 </div>
-                 <br />
-
-                 <!-- Need and availability matching during disaster -->
-
-                 <li><span class="label label-success">Resource allocation during disasters</span> <a target="_blank" href="https://drive.google.com/file/d/1OF2ghcVpVBgh6LDu9vduDAKu-s6VUkGZ/view?usp=sharing">
-                 Utilizing Microblogs for Assisting Post-Disaster Relief Operations via Matching Resource Needs and Availabilities</a>, Ritam Dutt, Moumita Basu, Kripabandhu Ghosh, Saptarshi Ghosh
-
-                  <a style="float:right" data-toggle="collapse" data-target="#osmdis">More details</a>
-                 </li>
-                 <div id="osmdis" class="collapse">
-                    <br />
-                    <div align="center">
-                     <img id="mobile-img" src="images/osmdis-1.png" width="40%" border="0" height="60%" alt=""></a>
-                     &nbsp;
-                     <img id="mobile-img" src="images/osmdis-2.png" width="40%" border="0" height="60%" alt=""></a><br>
-                     </div>   
-                     During a disaster event, two types of information that are especially useful for coordinating relief operations are needs and availabilities of resources (e.g., food, water, medicines) in the affected region.Information posted on microblogging sites is increasingly being used for assisting post-disaster relief operations.In this context, two practical challenges are (i) to identify tweets that inform about resource needs and availabilities (termed as need-tweets and availability-tweets respectively), and (ii) to automatically match needs with appropriate availabilities. While several works have addressed the first problem, there has been little work on automatically matching needs with availabilities. The few prior works that attempted matching only considered the resources, and no attempt has been made to understand other aspects of needs/availabilities that are essential for matching in practice. In this work, we develop a methodology for understanding five important aspects of need-tweets and availability-tweets, including what resource and what quantity is needed/available, the geographical location of the need/availability, and who needs / is providing the resource. Understanding these aspects helps us to address the need-availability matching problem considering not only the resources, but also other factors such as the geographical proximity between the need and the availability. To the best of our knowledge, this study is the first attempt to develop methods for understanding the semantics of need-tweets and availability-tweets. We also develop a novel methodology for matching need-tweets with availability-tweets, considering both resource similarity and geographical proximity. Experiments on two datasets corresponding to two disaster events, demonstrate that our proposed methods perform substantially better matching than those in prior works.
-
-                 </div>
-                 <br />
-
-                 <!-- # Hate diffusion in GAB -->
-
-                 <li><span class="label label-success">Hate diffusion</span> <a target="_blank" href="https://drive.google.com/file/d/1UXvIrp42Yr_7ZQJc19AtmxUgeCrWnr1O/view?usp=sharing"> Spread of hate speech in online social media </a>, Binny Mathew, Ritam Dutt, Pawan Goyal, Animesh Mukherjee
-
-                  <a style="float:right" data-toggle="collapse" data-target="#gabhate">More details</a>
-                 </li>
-                 <div id="gabhate" class="collapse">
-                    <br />
-                    <div align="center">
-                     <img id="mobile-img" src="images/gabhate2.png" width="30%" border="0" height="30%" alt=""></a>
-                     <img id="mobile-img" src="images/gabhate1.png" width="30%" border="0" height="30%" alt=""></a>
-                     <img id="mobile-img" src="images/gabhate3.png" width="30%" border="0" height="30%" alt=""></a>
-                     </div>   
-                    The present online social media platform is afflicted with several issues, with hate speech being on the predominant forefront. The prevalence of online hate speech has fuelled horrific real-world hate-crime such as the mass-genocide of Rohingya Muslims, communal violence in Colombo and the recent massacre in the Pittsburgh synagogue. Consequently it is imperative to understand the diffusion of such hateful content in an online setting. We conduct the first study that analyses the flow and dynamics of posts generated by hateful and non-hateful users on Gab (gab.com) over a massive dataset of 341K users and 21M posts. Our observations confirms that hateful content diffuse farther, wider and faster and have a greater outreach than those of non-hateful users. A deeper inspection into the profiles and network of hateful and non-hateful users reveals that the former are more influential, popular and cohesive. Thus, our research explores the interesting facets of diffusion dynamics of hateful users and broadens our understanding of hate speech in the online world. 
-                 </div>
-                 <br />
-
-
-
-
-
-                 <!-- YouTube video comments -->
-
-                <li><span class="label label-success">YouTube comments</span> <a target="_blank" href="https://drive.google.com/file/d/1yfxHtGgX2YiGgdkWZK8Jpk5TLQ6J-LIU/view?usp=sharing"> "Who is watching in 2018?": An Automated Analysis of YouTube comments
-                  </a>, Ritam Dutt, Sayan Ghosh, Suman Kalyan Maity, Animesh Mukherjee
-
-                  <a style="float:right" data-toggle="collapse" data-target="#YouTube">More details</a>
-                 </li>
-                 <div id="YouTube" class="collapse">
-                    <br />
-                    <div align="center">
-                     <img id="mobile-img" src="images/youtube.png" width="65%" border="0" height="55%" alt=""></a>
-                     </div>   
-                     YouTube's popularity as the largest video-sharing platform generates a huge footfall and the only way a user can interact with the rest of the community is via the commenting facility. However, the inadequacy of YouTube's current comment ranking system does not cater to the comment's content or the user's requirements. Moreover, users also leverage comments to hold or initiate conversations and it is necessary to distinguish such comments from spam.  Manual identification of different comment types is a tedious and unfeasible task. In this paper, we present a novel automated approach to categorize the YouTube comments hierarchically. We leverage linguistic and social cues of a comment to develop a 2-tier classification framework that can categorize 7 different comment classes.  
-
-                 </div>
-                 <br />
-                
-                <!-- news article recommendation -->
-
-                 <li><span class="label label-success">Public Sphere 2.0</span> <a target="_blank" href="https://drive.google.com/file/d/1hYn0LagcFkrxmR9-EBP_HoFy5MGnZ-hB/view?usp=sharing"> "Public Sphere 2.0": Targeted Commenting in Online News Media
-                  </a>, Ankan Mullick, Sayan Ghosh, Ritam Dutt, Avijit Ghosh and Abhijnan Chakraborty 
-
-                  <a style="float:right" data-toggle="collapse" data-target="#publicsphere">More details</a>
-                 </li>
-                 <div id="publicsphere" class="collapse">
-                    <br />
-                    <div align="center">
-                     <img id="mobile-img" src="images/news.png" width="65%" border="0" height="55%" alt=""></a>
-                     </div>   
-                     With the increase in online news consumption, to maximize advertisement revenue, news media websites try to attract and retain their readers on their sites. One of the most effective tools for reader engagement is commenting, where news readers post their views as comments against the news articles. Traditionally, it has been assumed that the comments are mostly made against the full article. In this work, we show that present commenting landscape is far from this assumption. Because the readers lack the time to go over an entire article, most of the comments are relevant to only particular sections of an article. In this paper, we build a system which can automatically classify comments against relevant sections of an article. To implement that, we develop a deep neural network based mechanism to find comments relevant to any section and a paragraph wise commenting interface to showcase them. We believe that such a data driven commenting system can help news websites to further increase reader engagement.
-
-                 </div>
-                 <br />
-
-
-                 <!-- Diffusion dynamics in GAB -->
-
-                
-                
-            </ul>
-                
-            </ul>
-
-
-
-
             </div>
         </div>
     </div>
 </section>
-
 
 
 
@@ -462,13 +776,21 @@
                     Information Retrieval <br />
                     Social Computing<br/>
                     Complex Networks<br>
-                </div>
-                
-                <div class="col-md-4 centerkar">
-                    Artificial Intelligence <br/>
+
                     Machine Learning <br />
                     Deep Learning <br/>
                     Scalable Data Mining <br/>
+                </div>
+                
+                <div class="col-md-4 centerkar">
+                    Neural Networks for NLP <br>
+                    Multilingual NLP <br>
+                    Computational Modeling of Discourse <br>
+                    Language and Statitics<br>
+                    Question Answering <br>
+                    Intermediate Statistics <br>
+                    Dialogue Systems <br>
+                    
                 </div>
             </div>
             </div>
@@ -551,12 +873,9 @@
 
                 <hr class="star-primary">
                 <h2>Contact</h2>
-
-                Vidyasagar Hall of Residence, <br />
-                Indian Institute of Technology, Kharagpur <br />
-                Kharagpur, West Midnapur, India - 721302 <br />
-                Tel: <a href="tel:919830266020">+91-98302-66020</a><br/>
-            
+                Gates and Hillman Center, 6223
+                Language Technologies Institute, <br />
+                Carnegie Mellon University <br />
                 Email:
                 <script language="JavaScript">
                     <!--
