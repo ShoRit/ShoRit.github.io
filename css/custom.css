@@ -25,7 +25,7 @@ body {
     font-size: 16px;
 }
 .classes {
-	margin:30px;
+	margin:10px;
 }
 
 #classes-filter li {
@@ -45,6 +45,29 @@ body {
 	margin-bottom: 0.5em;
 	overflow: visible;
 }
+
+.skills-list {
+	columns: 3;          /* Number of columns */
+	-webkit-columns: 3;
+	-moz-columns: 3;
+	list-style-type: disc;
+	padding-left: 20px;
+  }
+  
+.skills-list li {
+break-inside: avoid;
+margin-bottom: 5px;
+}
+
+/* .skills-list {
+list-style-type: none;
+padding-left: 0;
+}
+
+.skills-list li {
+padding: 5px 0;
+font-size: 1.1em;
+} */
 
 #classes-list #invited,
 #classes-list #english,

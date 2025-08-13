@@ -62,29 +62,16 @@
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
             <ul class="nav navbar-nav navbar-right">
                 <li class="page-scroll">
-                    <a href=#">Home</a>
-                </li>
-                <!-- <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-2-content').show();" href="#news">News</a>
-                </li> -->
-                <!-- <li class="dropdown">
-                <a class="dropdown-toggle" data-toggle="dropdown" href="#">
-                Publications<span class="caret"></span></a>
-                    <ul class="dropdown-menu">
-                    <li><a onclick="javascript:reset_menus();$('#tab-3-content').show();" href="#publications">Selected</a></li>
-                        <li><a href="publications/">All</a></li>
-                    </ul>
-                </li> -->
-                <li class="page-scroll">
-                    <a href="#news">News</a>
+                    <!-- <a href=#">Home</a> -->
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#home">Home</a>
                 </li>
 
                 <li class="page-scroll">
-                    <a href="#publications">Publications</a>
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#publications">Publications</a>
                 </li>
                 
                 <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Courses</a>
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Skills</a>
                 </li>
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#awards">Achievements</a>
@@ -172,9 +159,9 @@
             <div class="allshow" style="display:none;" id="tab-1-content">
             <hr class="star-primary">
 
-            <p class="lead"> I am a senior Ph.D. student at the <a target="_blank" href="https://www.lti.cmu.edu/people/222227970/ritam-dutt">Language Technologies Institute</a> at the Carnegie Mellon Unviersity where I am advised by Dr. Carolyn Rose. </p>
+            <p class="lead"> I am a senior Ph.D. student at the <a target="_blank" href="https://www.lti.cmu.edu/people/222227970/ritam-dutt">Language Technologies Institute</a> at Carnegie Mellon Unviersity, advised by <a target="_blank" href="https://cp3a.github.io/">Carolyn Rose</a>. </p>
 
-            <p> I am passionate about using AI and NLP for social good, with a special focus on education and medicine. Specifically, my research investigates where and why NLP models fail to generalize and what can be done to improve generalizability. My current research involves information extraction from biomedical and chemical documents, and integrating structural knowledge with unstructured text. I am also invested in pragmatics and discourse with an emphasis on how to facilitate difficult conversations between teachers and students. I graduated from Indian Institute of Technology Kharagpur, summa cum laude,  with a masters in technology in computer science and engineering where I worked on extracting actionable information from social media texts, information propagation, and computational social science.  </p>
+            <p> I am passionate about using AI and NLP for social good, with a special focus on education and medicine. Specifically, my research investigates where and why NLP models fail to generalize and what supports we can add to facilitate transfer to new settings, domains, and tasks. My research spans multiple avenues such as graph representation learning, discourse and pragmatics, information extraction, question answering, reasoning, and evaluation. I graduated from Indian Institute of Technology Kharagpur, summa cum laude,  with a masters in technology in computer science and engineering where I worked on extracting actionable information from social media texts, information propagation, and computational social science. </p>
                           
                
                </h3>
@@ -197,6 +184,108 @@
 
             <h2> Publications</h2>
  			<ul>
+
+                <!-- R2-COD, Preprint, 2025 -->
+                
+                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://arxiv.org/pdf/2508.01475">
+                    R2-CoD: Understanding Text-Graph Complementarity in Relational Reasoning via Knowledge Co-Distillation</a>.<br>
+                    Zhen Wu, <b>Ritam Dutt</b>, Luke M. Breitfeller,  Divyanshu Sheth, Armineh Nourbakhsh, Siddharth Parekh, Carolyn Penstein Rosé
+                    <a style="float:right" data-toggle="collapse" data-target="#r2-cod">More details</a><br>
+                    
+                    <!-- <b> Proceedings of the 2024 Conference on ACL.  -->
+                    
+                    </li>
+                    <div id="r2-cod" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/r2-cod.png" width="65%" border="0" height="70%" alt=""></a><br>
+                        </div>
+                        Relational reasoning lies at the core of many NLP tasks, drawing on complementary signals from text and graphs. While prior research has investigated how to leverage this dual complementarity, a detailed and systematic understanding of text-graph interplay and its effect on hybrid models remains underexplored. We take an analysis-driven approach to investigate text–graph representation complementarity via a unified architecture that supports knowledge co-distillation (CoD). We explore five tasks involving relational reasoning that differ in how text and graph structures encode the information needed to solve that task. By tracking how these dual representations evolve during training, we uncover interpretable patterns of alignment and divergence, and provide insights into when and why their integration is beneficial. 
+                    </div>
+                    <br />
+                
+                
+                <!-- Social Scaffolds, Preprint, 2025 -->
+
+                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://drive.google.com/file/d/1H-wFrr2AUJ1FzH_Iv9mXBHZNOGMlIRHm/view">
+                        Social Scaffolds: A Generalization Framework for Social Understanding Tasks</a>.<br>
+                        <b>Ritam Dutt</b>, Carolyn Penstein Rosé, Maarten Sap
+                        <a style="float:right" data-toggle="collapse" data-target="#social-scaffolds">More details</a><br>
+                        
+                        <!-- <b> Proceedings of the 2024 Conference on ACL.  -->
+                        
+                    </li>
+                    <div id="social-scaffolds" class="collapse">
+                        <br />
+                        <div align="center">
+                        <img id="mobile-img" src="images/social-scaffolds.png" width="95%" border="0" height="90%" alt=""></a><br>
+                        </div>
+                        Effective human communication in social settings is contingent on recognizing subtle cues, such as intentions or implications. Without such cues, NLP models risk missing social signals, instead relying on surface patterns. We introduce Social Scaffolds, an automated framework for facilitating generalization across social reasoning tasks by generating rationales that make these social cues explicit. Grounded in narrative modeling principles, we generate task-agnostic rationales that capture different perspectives, i.e., that of the speaker, the listener, and the general world-view. Our experimental suite showcases that providing rationales as augmentations aids task performance for both supervised fine-tuning and in-context learning paradigms. Notably, providing all three rationale types significantly improves cross-task performance in 44% of cases, and inferred speaker intent in 31.3% of cases. We conduct statistical and ablation analyses that show how rationales complement the input text and are used effectively by models. 
+                    </div>
+                    <br />
+
+                <!-- Depgen, KnowledgeNLP, 2025 -->
+                
+                    <li><span class="label label-warning">KnowledgeNLP'25</span> <a target="_blank" href="https://aclanthology.org/2025.knowledgenlp-1.28.pdf">
+                        Can dependency parses facilitate generalization in language models? A case study of cross-lingual relation extraction</a>.<br>
+                        <b>Ritam Dutt</b>, Shounak Sural, Carolyn Penstein Rosé
+    
+                        <a style="float:right" data-toggle="collapse" data-target="#depgen">More details</a><br>
+                        
+                        <!-- <b> Proceedings of the 2024 Conference on ACL.  -->
+                        
+                        </li>
+                        <div id="depgen" class="collapse">
+                           <br />
+                           <div align="center">
+                            <img id="mobile-img" src="images/depgen.png" width="70%" border="0" height="60%" alt=""></a><br>
+                            </div>
+                            We propose DEPGEN, a framework for evaluating the generalization capabilities of language models on the task of relation extraction, with dependency parses as scaffolds. We use a GNN-based framework that takes dependency parses as input and learns embeddings of entities which are augmented to a baseline multilingual encoder. We also investigate the role of dependency parses when they are included as part of the prompt to LLMs in a zero-shot learning setup. We observe that including off-the-shelf dependency parses can aid relation extraction, with the best performing model having a mild relative improvement of 0.91% and 1.5% in the in-domain and zero-shot setting respectively across two datasets. For the in-context learning setup, we observe an average improvement of 1.67%, with significant gains for low-performing LLMs. We also carry out extensive statistical analysis to investigate how different factors such as the choice of the dependency parser or the nature of the prompt impact performance.
+                        </div>
+                        <br />
+                
+                
+                <!-- Bias-Shades, NAACL, 2025 -->
+                
+                <li><span class="label label-success">NAACL'25</span> <a target="_blank" href="https://aclanthology.org/2025.naacl-long.600.pdf">
+                    SHADES: Towards a Multilingual Assessment of Stereotypes in Large Language Models</a>.<br>
+                    The Big-Science Evaluation Team
+                    <a style="float:right" data-toggle="collapse" data-target="#shades">More details</a><br>
+                    
+                    <!-- <b> Proceedings of the 2025 Conference on NAACL.  -->
+                    
+                    </li>
+                    <div id="shades" class="collapse">
+                        <br />
+                        <div align="center">
+                        <img id="mobile-img" src="images/shades.png" width="80%" border="0" height="80%" alt=""></a><br>
+                        </div>
+                        Large Language Models (LLMs), the bedrock of many “artificial intelligence” (AI) applications, are known to reproduce social biases present in their training data. Yet resources to measure and control this issue are limited. Research identifying and mitigating stereotype biases have primarily been concentrated around English, lagging the rapid advancement of LLMs in multilingual settings. To help further advance the ability to address stereotype bias in AI systems, we introduce a new multi-lingual dataset: SHADES.1 Designed for examining culturally-specific stereotypes that may be learned by LLMs, SHADES includes over 300 stereotypes from 37 regions, translated across 16 languages and annotated with multiple features to aid multilingual stereotype analysis. All statements in all languages are paired with templates, to serve as a resource for unlimited generation of new evaluation data. We demonstrate the utility of the dataset in a series of exploratory evaluations that reveal significant differences in how stereotypes are recognized and reflected across models and languages.
+                    </div>
+                    <br />
+            
+                
+                <!-- Geneval, Geneval, 2024 -->
+            
+                <li><span class="label label-warning">GenBench'24</span> <a target="_blank" href="https://aclanthology.org/2024.genbench-1.pdf#page=178">
+                    Investigating the Generalizability of Pretrained Language Models across Multiple Dimensions: A Case Study of NLI and MRC</a>.<br>
+                    <b>Ritam Dutt</b>, Sagnik Ray Choudhury, Varun Venkat Rao, Carolyn Penstein Rosé, V.G.Vinod Vydiswaran
+
+                    <a style="float:right" data-toggle="collapse" data-target="#geneval">More details</a><br>
+                    
+                    <!-- <b> Proceedings of the 2024 Conference on ACL.  -->
+                    
+                    </li>
+                    <div id="geneval" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/geneval.png" width="50%" border="0" height="50%" alt=""></a><br>
+                        </div>
+                        Generalization refers to the ability of machine learning models to perform well on dataset distributions different from the one it was trained on. While several pre-existing works have characterized the generalizability of NLP models across different dimensions, such as domain shift, adversarial perturbations, or compositional variations, most studies were carried out in a stand-alone setting, emphasizing a single dimension of interest. We bridge this gap by systematically investigating the generalizability of pre-trained language models across different architectures, sizes, and training strategies, over multiple dimensions for the task of natural language inference and question answering. Our results indicate that model instances typically exhibit consistent generalization trends, i.e., they generalize equally well (or poorly) across most scenarios, and this ability is correlated with model architecture, base dataset performance, size, and training mechanism. We hope this research motivates further work in developing a multi-dimensional generalization benchmark for systematic evaluation and examining the reasons behind models' generalization abilities. 
+                    </div>
+                    <br />
+                
+
 
                 <!-- RATDIAL, ACL, 2024 -->
             
@@ -757,6 +846,8 @@
             <!--- Write a list of achievements as an itemized list-->
 
             <ul>
+                <li> Outstanding paper at GenBench, 2nd GenBench Workshop, at EMNLP 2024. </li>
+                <li>Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, at ACL 2022. </li>
                 <li> Nominated for the Best Paper Award at Spa-NLP Semi-Parametric Methods in NLP Workshop, collocated with ACL, 2022.  </li>
                 <li> Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, co-located with ACL 2022. </li>
                 <li> Achieved the highest score in the Shared Task at CLEF, Conference and Labs of the Evaluation Forum, 2021. </li>
@@ -779,9 +870,56 @@
     </div>
 </section>
 
-
+<section id="courses">
+    <div class="container lead">
+      <div class="col-md-12" style="margin-top: 10px;">
+  
+        <i class="noshow" style="display:none;" id="tab-1">
+          <button class="btn btn-default btn-lg btn-block"
+                  onclick="$('#tab-4-content').toggle();">
+            Skills <span class="glyphicon glyphicon-chevron-down"></span>
+          </button>
+        </i>
+  
+        <div class="allshow" style="display:none;" id="tab-12-content">
+          <hr class="star-primary">
+          <h2>Skills</h2>
+  
+          <div class="row">
+            <div class="col-md-12">
+              <ul class="skills-list">
+                <li>Natural Language Processing</li>
+                <li>Information Retrieval</li>
+                <li>Social Computing</li>
+                <li>Complex Networks</li>
+                <li>Machine Learning</li>
+                <li>Deep Learning</li>
+                <li>Scalable Data Mining</li>
+                <li>Neural Networks for NLP</li>
+                <li>Multilingual NLP</li>
+                <li>Computational Modeling of Discourse</li>
+                <li>Language and Statistics</li>
+                <li>Question Answering</li>
+                <li>Intermediate Statistics</li>
+                <li>Dialogue Systems</li>
+                <li>Python, R, Java, SQL</li>
+                <li>PyTorch, TensorFlow</li>
+                <li>Bash, Git, Linux</li>
+                <li>Transformers, Hugging Face</li>
+                <li>Scikit-Learn, NumPy, Pandas</li>
+                <li>LangChain, vLLMs</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+  
+      </div>
+    </div>
+  </section>
+  
 
 <!-- Courses Section -->
+ <!---
 <section id="courses">
     <div class="container lead">
         <div style="text-align: left; margin-top:10px" class="col-md-12">
@@ -791,49 +929,51 @@
             </i>
             <div class="allshow" style="display:none;" id="tab-4-content">
             <hr class="star-primary">
-            <h2>Courses</h2>
-            <!-- Natural Language Processing, Social Computing, Information Retrieval, Complex Networks, Machine Learning, Deep Learning, Artificial Intelligence, Scalable Data Mining. -->
-
+            <h2>Skills</h2>
+            
             <div class="row">
                 <div class="col-md-4 centerkar">
-                    Natural Language Processing <br>
-                    Information Retrieval <br />
-                    Social Computing<br/>
-                    Complex Networks<br>
-
-                    Machine Learning <br />
-                    Deep Learning <br/>
-                    Scalable Data Mining <br/>
+                  <ul>
+                    <li>Natural Language Processing</li>
+                    <li>Information Retrieval</li>
+                    <li>Social Computing</li>
+                    <li>Complex Networks</li>
+                    <li>Machine Learning</li>
+                    <li>Deep Learning</li>
+                    <li>Scalable Data Mining</li>
+                  </ul>
                 </div>
-                
+              
                 <div class="col-md-4 centerkar">
-                    Neural Networks for NLP <br>
-                    Multilingual NLP <br>
-                    Computational Modeling of Discourse <br>
-                    Language and Statitics<br>
-                    Question Answering <br>
-                    Intermediate Statistics <br>
-                    Dialogue Systems <br>
-                    
+                  <ul>
+                    <li>Neural Networks for NLP</li>
+                    <li>Multilingual NLP</li>
+                    <li>Computational Modeling of Discourse</li>
+                    <li>Language and Statistics</li>
+                    <li>Question Answering</li>
+                    <li>Intermediate Statistics</li>
+                    <li>Dialogue Systems</li>
+                  </ul>
                 </div>
+              
+                <div class="col-md-4 centerkar">
+                  <ul>
+                    <li>Python, R, Java, SQL</li>
+                    <li>PyTorch, TensorFlow</li>
+                    <li>Bash, Git, Linux</li>
+                    <li>Transformers, Hugging Face</li>
+                    <li>Scikit-Learn, NumPy, Pandas</li>
+                    <li>LangChain, vLLMs</li>
+                  </ul>
+                </div>
+              </div>
             </div>
-            </div>
-           <!--  <ul>
-                <li><span class="label label-success">EPL646</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl646/">Advanced Topics in Databases</a> (Fall)</li>
-                <li><span class="label label-default">EPL446</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl446/">Advanced Database Systems</a></li>
-                <li><span class="label label-success">EPL371</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl371/">Systems Programming</a> (Winter)</li>
-               <li><span class="label label-default">EPL342</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl342/">Databases</a></li>
-                <li><span class="label label-success">EPL132</span> <a href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl132">Programming Principles II</a> (Winter)</li>
-                <li><span class="label label-default">EPL111</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl111">Discrete Structures in Computer Science and Computation</a></li>
-                <li><span class="label label-default">EPL035</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl035">Data Structures and Algorithms for ECE</a></li>
-                <li><span class="label label-default">EPL032</span> <a target="_blank" href="http://www.cs.ucy.ac.cy/~dzeina/courses/epl032">Introduction to Programming and Problem Solving</a></li>
-                <li><span class="label label-default">EPL003</span> Computer Science and Information Systems</li>
-                <li><span class="label label-default">EPL001</span> Introduction to Computer Science</li>
-            </ul> -->
+          
             </div>
         </div>
     </div>
 </section>
+-->
 
 <!-- Courses Section -->
 
