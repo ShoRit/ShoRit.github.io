@@ -35,6 +35,7 @@
 <script src="js/menucollapse.js"></script>
 <script type="text/javascript" src="js/arrow78.js"></script>
 <script type="text/javascript" src="js/custom.js"></script>
+</head>
 
 <body id="page-top" class="index">
 
@@ -54,7 +55,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span><a target="_blank" href="https://lti.cs.cmu.edu/"><img border="0" width="120" src="images/cmu-lti.png"/></a></span>
+            <span><a target="_blank" href="https://www.microsoft.com/"><img border="0" width="180" style="margin-top:6px" src="images/logos/microsoft.svg" alt="Microsoft"/></a></span>
             <!-- <span><a target="_blank" href="http://www.iitkgp.ac.in/"><img border="0" width="120" src="images/kgplogo.png"/></a></span> -->
         </div>
 
@@ -69,12 +70,15 @@
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#publications">Publications</a>
                 </li>
-                
                 <li class="page-scroll">
-                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Skills</a>
+                    <a href="#experience">Experience</a>
                 </li>
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#tab-5-content').show();" href="#awards">Achievements</a>
+                </li>
+                
+                <li class="page-scroll">
+                    <a onclick="javascript:reset_menus();$('#tab-4-content').show();" href="#courses">Skills</a>
                 </li>
                 <li class="page-scroll">
                     <a onclick="javascript:reset_menus();$('#tab-9-content').show();" href="#contact">Contact</a>
@@ -183,6 +187,46 @@
             <h2> Publications</h2>
  			<ul>
 
+                <!-- EmailBench -->
+                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://arxiv.org/abs/2609.31906">EmailBench: A Benchmark for Evaluating LLM Agents on Enterprise Email and Productivity Tasks</a>.<br>
+                    Mukul Singh, Mansi Uniyal, Devin Devlin, Wen Xie, Big Thadawasin, Vivian Lai, Hyeonsu B. Kang, <b>Ritam Dutt</b>
+                    <a style="float:right" data-toggle="collapse" data-target="#emailbench">More details</a><br>
+                    </li>
+                    <div id="emailbench" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/emailbench-fig1.png" width="85%" alt="Figure 1"><br>
+                        </div>
+                        We introduce EmailBench, a benchmark for evaluating AI agents on realistic email and workplace productivity tasks. EmailBench has 175 unique scenarios, with access to 119 distinct tools that agents can leverage to complete them. To reflect what users actually need, we built the scenarios and tasks from the most common ways people use AI agents in their daily work. We benchmark 7 proprietary and open-source models of varying sizes and capabilities. Frontier models perform reasonably well overall, but they struggle in scenarios that are more complex and compositional, especially those that span multiple domains. We also analyze where and why agents fail, and use these findings to suggest directions for building more capable workplace agents.
+                    </div>
+                    <br />
+
+                <!-- Email preprints -->
+                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://drive.google.com/file/d/1LcYR4OI2qPs8wOJxQzyP-kB0eCcpyg0r/view?usp=drive_link">PIKE: Evidence-Guided Retrieval for Email Question Answering</a>.<br>
+                    Namjoon Suh, <b>Ritam Dutt</b>, Alex Williams
+                    <a style="float:right" data-toggle="collapse" data-target="#pike">More details</a><br>
+                    </li>
+                    <div id="pike" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/pike-fig1.png" width="90%" alt="Figure 1"><br>
+                        </div>
+                        Personal email question answering requires recovering evidence from incomplete recollections and connecting information across conversations. We introduce a benchmark of 640 evidence-grounded questions across 50 Enron and Avocado inboxes, covering six search intents from keyword lookup to cross-thread aggregation and recurring-role inference. We also present PIKE, an email-specific framework that combines content retrieval with person, topic, temporal, and broadcast signals. An evidence-aware critic assesses coverage and issues targeted requeries before final evidence selection and generation. Dynamic PIKE achieves 85.3% Recall@15 versus 80.6% for BM25, averaging 1.10 retrieval rounds. Gains are largest for recurring-role queries and persist across three LLM backends. Ablations identify distinct contributions from person and temporal retrieval, while a rubric-based audit reveals missed evidence gaps in critic stopping decisions. With retrieved candidates fixed, aspect-based selection and generation increases answer completeness from 75.6% to 81.0%, with citation faithfulness remaining above 95%. These findings show where structured retrieval benefits personal email QA and motivate separate evaluation of evidence retrieval, sufficiency assessment, and answer generation.
+                    </div>
+                    <br />
+                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://arxiv.org/abs/2610.02627">Does It Matter How You Ask? Evaluating the Robustness of Email Assistants to Communication Variation</a>.<br>
+                    Feng Chen, Aynaz Taheri, Alex Williams, <b>Ritam Dutt</b>
+                    <a style="float:right" data-toggle="collapse" data-target="#email-robustness">More details</a><br>
+                    </li>
+                    <div id="email-robustness" class="collapse">
+                       <br />
+                       <div align="center">
+                        <img id="mobile-img" src="images/email-robustness-fig1.png" width="80%" alt="Figure 1"><br>
+                        </div>
+                        A key desideratum of AI assistants is robustness to different communication styles. Such systems should reconcile queries with the same underlying intent but different registers, tones, affect, and dialects as the same request. In this paper, we investigate the reliability and robustness of email assistants to communication variations for both RAG and agentic settings. We propose an automated framework to generate semantically equivalent queries that preserve user intent but vary in communication styles across five benchmarks. Our analysis reveals significant robustness failures for certain communication styles. Indirect requests show significant and consistent performance drops across all benchmarks, while formal ones lower task completion success for all agentic settings. Dialectical variations also degrade performance, with the drops being significantly more pronounced on the RAG setting. We carry out a comprehensive analysis to investigate the distinct causes of failures for agentic settings in terms of evidence usage, work completion, and number of unwanted actions.
+                    </div>
+                    <br />
+
                 <!-- Moral Reasoning Position Paper, EvalEval@ACL, 2026 -->
 
                 <li><span class="label label-warning">EvalEval'26</span> <a target="_blank" href="https://aclanthology.org/2026.evaleval-1.38/">
@@ -217,7 +261,7 @@
 
                 <!-- Temporal Extraction Generalization, Preprint -->
 
-                <li><span class="label label-danger">Preprint</span> <a target="_blank" href="https://drive.google.com/file/d/1JtNxzFNvLgmJJD6xUSuwha_zEIqfjxdp/view?usp=sharing">
+                <li><span class="label label-success">AACL-IJCNLP'26</span> <a target="_blank" href="https://arxiv.org/abs/2610.02549">
                     Evaluating Multi-Dimensional Generalization of Large Language Models in Temporal Extraction Tasks</a>.<br>
                     Fahmid Iqbal, <b>Ritam Dutt</b>, Soumitra Das, Arnav Verma, Sagnik Ray Choudhury
                     <a style="float:right" data-toggle="collapse" data-target="#temporal-extraction">More details</a><br>
@@ -301,7 +345,7 @@
                 
                 <!-- Social Scaffolds, Preprint, 2025 -->
 
-                <li><span class="label label-success">EMNLP'25</span> <a target="_blank" href="https://drive.google.com/file/d/1H-wFrr2AUJ1FzH_Iv9mXBHZNOGMlIRHm/view">
+                <li><span class="label label-success">EMNLP'25</span> <a target="_blank" href="https://aclanthology.org/2025.emnlp-main.1485/">
                         Social Scaffolds: A Generalization Framework for Social Understanding Tasks</a>.<br>
                         <b>Ritam Dutt</b>, Carolyn Penstein Rosé, Maarten Sap
                         <a style="float:right" data-toggle="collapse" data-target="#social-scaffolds">More details</a><br>
@@ -361,7 +405,7 @@
                 
                 <!-- Geneval, Geneval, 2024 -->
             
-                <li><span class="label label-warning">GenBench'24</span> <a target="_blank" href="https://aclanthology.org/2024.genbench-1.pdf#page=178">
+                <li><span class="label label-warning">GenBench'24</span> <a target="_blank" href="https://aclanthology.org/2024.genbench-1.11/">
                     Investigating the Generalizability of Pretrained Language Models across Multiple Dimensions: A Case Study of NLI and MRC</a>.<br>
                     <b>Ritam Dutt</b>, Sagnik Ray Choudhury, Varun Venkat Rao, Carolyn Penstein Rosé, V.G.Vinod Vydiswaran
 
@@ -383,7 +427,7 @@
 
                 <!-- RATDIAL, ACL, 2024 -->
             
-                <li><span class="label label-success">ACL'24</span> <a target="_blank" href="https://arxiv.org/pdf/2406.19545">
+                <li><span class="label label-success">ACL'24</span> <a target="_blank" href="https://aclanthology.org/2024.acl-long.373/">
                     Leveraging Machine-Generated Rationales to Facilitate Social Meaning Detection in Conversations</a>.<br>
                     <b>Ritam Dutt</b>, Zhen Wu, Kelly Shi, Divyanshu Sheth, Prakhar Gupta, Carolyn Penstein Rosé
                     <a style="float:right" data-toggle="collapse" data-target="#ratdial">More details</a><br>
@@ -432,7 +476,7 @@
                 
                 <!-- GRAILQA++, AACL, 2023 -->
             
-                <li><span class="label label-success">AACL'23</span> <a target="_blank" href="http://www.afnlp.org/conferences/ijcnlp2023/proceedings/main-long/cdrom/pdf/2023.ijcnlp-long.58.pdf">
+                <li><span class="label label-success">AACL'23</span> <a target="_blank" href="https://aclanthology.org/2023.ijcnlp-main.58/">
                     GrailQA++: A Challenging Zero-Shot Benchmark for Knowledge Base Question Answering</a>.<br>
                     <b>Ritam Dutt</b>, Sopan Khosla, Vinayshekhar Bannihatti Kumar, Rashmi Gangadharaiah 
                     <!-- <b> Proceedings of the 13th International Joint Conference on Natural Language Processing and the 3rd Conference of the Asia-Pacific Chapter of the Association for Computational Linguistics</b>.  -->
@@ -525,7 +569,7 @@
 
                 <!--R3, Multidoc2dial, ACL 2022 -->
             
-                <li><span class="label label-warning">DialDoc, ACL'22</span> <a target="_blank" href="https://aclanthology.org/2023.insights-1.11">
+                <li><span class="label label-warning">DialDoc, ACL'22</span> <a target="_blank" href="https://aclanthology.org/2022.dialdoc-1.17/">
                     R3 : Refined Retriever-Reader pipeline for Multidoc2dial</a>.<br>
                     Srijan Bansal, Suraj Tripathi, Sumit Agarwal, Sireesh Gururaja, Aditya Srikanth Veerubhotla, <b>Ritam Dutt</b>, Teruko Mitamura, Eric Nyberg
                     <!-- <b> Proceedings of the Second DialDoc Workshop on Document-grounded Dialogue and Conversational Question Answering</b>.  -->
@@ -544,7 +588,7 @@
                 
                 <!-- Medtype, JBI, 2021 -->
             
-                <li><span class="label label-success">JBI'21</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1016/j.jbi.2021.103880">
+                <li><span class="label label-success">JBI'21</span> <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S1532046421002094">
                     Improving broad-coverage medical entity linking with semantic type prediction and large-scale datasets </a>.<br>
                     Shikhar Vashishth , Denis Newman-Griffis, Rishabh Joshi, <b>Ritam Dutt</b>, Carolyn P. Rose
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -619,7 +663,7 @@
 
                 <!-- site dcs, 2021 -->
             
-                <li><span class="label label-success">SITE'21</span> <a target="_blank" href="https://www.learntechlib.org/noaccess/219277/">
+                <li><span class="label label-success">SITE'21</span> <a target="_blank" href="https://par.nsf.gov/servlets/purl/10252005">
                     Investigating adoption and collaboration with digital clinical simulations by teacher educators </a>.<br>
                     <b>Ritam Dutt</b>, Garron Hillaire, Alison Fang, Laura Larke, Carolyn Rosé, Justin Reich
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -721,7 +765,7 @@
 
                 <!-- cancer-misinfo, 2020 -->
 
-                <li><span class="label label-success">AAAI'20</span> <a target="_blank" href="https://cdn.aaai.org/ojs/7359/7359-28-10589-1-10-20200601.pdf">
+                <li><span class="label label-success">ICWSM'20</span> <a target="_blank" href="https://ojs.aaai.org//index.php/ICWSM/article/view/7359">
                     Analysing the extent of misinformation in cancer related tweets </a>.<br>
                     Rakesh Bal*, Sayan Sinha*, Swastika Dutta, Rishabh Joshi, Sayan Ghosh, <b>Ritam Dutt</b>
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -738,7 +782,7 @@
                 
                 <!-- Anonymity in Quora -->
             
-                <li><span class="label label-success">Socinfo'19</span> <a target="_blank" href="https://arxiv.org/pdf/1811.07223.pdf">
+                <li><span class="label label-success">Socinfo'19</span> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-34971-4_3">
                     "Deep Dive into Anonymity: A Large Scale Analysis of Quora Questions"</a>.<br>
                     Binny Mathew*, <b>Ritam Dutt*</b>, Suman Kalyan Maity, Pawan Goyal, Animesh Mukherjee
                      <a style="float:right" data-toggle="collapse" data-target="#anonymity">More details</a>
@@ -779,7 +823,7 @@
                 
                 <!-- disaster-ipm, 2019 -->
 
-                <li><span class="label label-success">IPM'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1016/j.ipm.2019.05.010">
+                <li><span class="label label-success">IPM'19</span> <a target="_blank" href="https://www.sciencedirect.com/science/article/pii/S0306457318306952">
                     Utilizing microblogs for assisting post-disaster relief operations via matching resource needs and availabilities </a>.<br>
                     <b>Ritam Dutt</b>, Moumita Basu, Kripabandhu Ghosh, Saptarshi Ghosh
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -798,7 +842,7 @@
                     
                 <!-- hate-difussion, 2019 -->
 
-                <li><span class="label label-success">WebSci'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3292522.3326034">
+                <li><span class="label label-success">WebSci'19</span> <a target="_blank" href="https://dl.acm.org/doi/10.1145/3292522.3326034">
                     Spread of Hate Speech in Online Social Media </a>.<br>
                     <b>Ritam Dutt</b>, Moumita Basu, Kripabandhu Ghosh, Saptarshi Ghosh
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -816,7 +860,7 @@
 
                 <!-- public-sphere2, 2019 -->
 
-                <li><span class="label label-success">ECIR'19</span> <a target="_blank" href="https://dl.acm.org/doi/abs/10.1145/3292522.3326034">
+                <li><span class="label label-success">ECIR'19</span> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-3-030-15719-7_23">
                     Public Sphere 2.0: Targeted Commenting in Online News Media </a>.<br>
                     Ankan Mullick, Sayan Ghosh*, <b>Ritam Dutt*</b>, Avijit Ghosh*, Abhijnan Chakraborty
                     <!-- <b> Proceedings of the 61st Annual Meeting of the Association for Computational Linguistics</b>.  -->
@@ -838,7 +882,7 @@
                 <!-- SAVITR,
                 SMERP, 2018 -->
             
-                 <li><span class="label label-warning">SMERP, WWW'18</span> <a target="_blank" href="http://delivery.acm.org/10.1145/3200000/3191623/p1643-dutt.pdf?ip=203.110.242.6&id=3191623&acc=OPENTOC&key=045416EF4DDA69D9%2EA3AF15239BC08E05%2E4D4702B0C3E38B35%2E4DD68F0663C025AA&__acm__=1542494771_18914d174472ec95214a2235672eac21">
+                 <li><span class="label label-warning">SMERP, WWW'18</span> <a target="_blank" href="https://dl.acm.org/citation.cfm?id=3191623">
                  "SAVITR:A System for Real-time Location Extraction from Microblogs during Emergencies"</a>. <br><b>Ritam Dutt</b>, Kaustubh Hiware, Avijit Ghosh, Rameshwar Bhaskaran. <a style="float:right" data-toggle="collapse" data-target="#savitr">More details</a>
                  </li>
                  <div id="savitr" class="collapse">
@@ -847,9 +891,6 @@
                      <img id="mobile-img" src="images/savitr.png" width="70%" border="0" height="70%" alt=""></a><br>
                      </div>
                      We present SAVITR, an automated system that leverages the information posted on the Twitter microblogging site to monitor and analyse emergency situations. Given that only a very small percentage of microblogs are geo-tagged, it is essential for such a system to extract locations from the text of the microblogs. We employ natural language processing techniques to infer the locations mentioned in the microblog text, in an unsupervised fashion and display it on a map-based interface. The system is designed for efficient performance, achieving an F-score of 0.81, and is approximately two orders of magnitude faster than other available tools for location extraction. 
-                     <br>
-                     You can catch a glimpse of the work online here. 
-                      <a target="_blank" href="savitr.herokuapp.com"> here</a>.
 
                  </div>
                  <br />
@@ -896,7 +937,7 @@
                  <!-- FB ADS ,
                  ICIIT- 2018 -->
 
-                <li><span class="label label-success">ICIIT'18</span> <a target="_blank" href="http://aclweb.org/anthology/N18-5004">"Senator, We Sell Ads:" Analysis of the 2016 Russian Facebook Ads Campaign. </a><b>Ritam Dutt</b>, Ashok Deb, and Emilio Ferrara. <a style="float:right" data-toggle="collapse" data-target="#fbads">More details</a>
+                <li><span class="label label-success">ICIIT'18</span> <a target="_blank" href="https://link.springer.com/chapter/10.1007/978-981-13-3582-2_12">"Senator, We Sell Ads:" Analysis of the 2016 Russian Facebook Ads Campaign. </a><b>Ritam Dutt</b>, Ashok Deb, and Emilio Ferrara. <a style="float:right" data-toggle="collapse" data-target="#fbads">More details</a>
                  </li>
                  <div id="fbads" class="collapse">
                     <br />
@@ -933,6 +974,25 @@
 
 
 
+<!-- Experience Section -->
+<section id="experience">
+    <div class="container lead">
+        <div style="text-align: left; margin-top:10px" class="col-md-12">
+            <div class="allshow" style="display:none;">
+            <hr class="star-primary">
+            <h2>Experience &amp; Education</h2>
+            <ul class="timeline">
+                <li><img src="images/logos/microsoft.svg" alt="Microsoft"><div><b>Senior Applied Scientist</b>, Microsoft Outlook Science <span class="tl-date">Apr 2026 &ndash; Present</span><br><span class="tl-line">Evaluation, personalization and responsible AI for email and productivity agents.</span></div></li>
+                <li><img src="images/logos/aws.svg" alt="AWS"><div><b>Applied Science Intern</b>, AWS AI <span class="tl-date">Summers 2022 &amp; 2021</span></div></li>
+                <li><img src="images/logos/cmu-lti.png" alt="CMU Language Technologies Institute"><div><b>Ph.D., Language Technologies Institute</b>, Carnegie Mellon University <span class="tl-date">2019 &ndash; 2026</span><br><span class="tl-line">Generalization and robustness of NLP systems, advised by Carolyn Ros&eacute;.</span></div></li>
+                <li><img src="images/logos/usc-mark.png" alt="USC"><div><b>Research Intern</b>, USC Information Sciences Institute <span class="tl-date">May &ndash; Jul 2018</span><br><span class="tl-line">Analysis of Russian Facebook ads with Emilio Ferrara (IUSSTF-Viterbi).</span></div></li>
+                <li><img src="images/logos/iitkgp.png" alt="IIT Kharagpur"><div><b>B.Tech. &amp; M.Tech., Computer Science</b>, IIT Kharagpur <span class="tl-date">2014 &ndash; 2019</span><br><span class="tl-line">CGPA 9.71/10; batch topper and Institute Silver Medalist.</span></div></li>
+            </ul>
+            </div>
+        </div>
+    </div>
+</section>
+
 <!-- Achievements Section -->
 <section id="awards">
     <div class="container lead">
@@ -948,20 +1008,21 @@
             <!--- Write a list of achievements as an itemized list-->
 
             <ul>
-                <li> Outstanding Paper Award at AACL-IJCNLP, 2025. </li>
-                <li> Outstanding paper at GenBench, 2nd GenBench Workshop, at EMNLP 2024. </li>
-                <li>Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, at ACL 2022. </li>
-                <li> Nominated for the Best Paper Award at Spa-NLP Semi-Parametric Methods in NLP Workshop, collocated with ACL, 2022.  </li>
-                <li> Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, co-located with ACL 2022. </li>
-                <li> Achieved the highest score in the Shared Task at CLEF, Conference and Labs of the Evaluation Forum, 2021. </li>
-                <li> Awarded the Ted Nelson Newcomer Award at Hypertext, 32rd ACM Conference on Hypertext and Social Media, 2021. </li>
-                <li> Best Paper Award at SITE, Society for Information Technology \& Teacher Education, 2021.  </li>
-                <li> Best Paper Award (Honorable Mention) at WebSci, 10th ACM Conference on Web Science, 2019. </li>
-                <li> Best Poster Presentation at  ECIR, European Conference Information Retrieval, 2019. </li>
-                <li> Nomination for Best Paper at SocInfo, Social Informatics, 2019. </li>
-                <li> One of the 5 recipients of the SIGWEB student travel grant for attending WebSci, 2019.  </li>
-                <li> Batch Topper: Joint Recipient of the Institute Silver Medal in Computer Science and Engineering at IIT Kharagpur. </li>
-                <li> Batch Topper: Secured distinction with 97.5\% in ISC, (High School or Class 12). </li>
+                <li>1st Place in the &ldquo;Reimagine the Future of Work&rdquo; Executive Challenge at the Microsoft FHL Hackathon, 2026.</li>
+                <li><a target="_blank" href="images/awards/aacl-2025.jpg">Outstanding Paper Award at AACL-IJCNLP, 2025.</a></li>
+                <li><a target="_blank" href="images/awards/genbench-2024.jpg">Honorable Mention at GenBench, 2nd GenBench Workshop, at EMNLP 2024.</a></li>
+                <li><a target="_blank" href="images/awards/dialdoc-2022.png">Achieved the highest score in the Shared Task at DialDoc, 2nd DialDoc Workshop, at ACL 2022.</a></li>
+                <li>Nominated for the Best Paper Award at Spa-NLP Semi-Parametric Methods in NLP Workshop, collocated with ACL, 2022.</li>
+                <li><a target="_blank" href="https://ceur-ws.org/Vol-2936/paper-58.pdf">Achieved the highest score in the Shared Task at CLEF, Conference and Labs of the Evaluation Forum, 2021.</a></li>
+                <li><a target="_blank" href="images/awards/hypertext-2021.png">Awarded the Ted Nelson Newcomer Award at Hypertext, 32nd ACM Conference on Hypertext and Social Media, 2021.</a></li>
+                <li><a target="_blank" href="images/awards/site-2021.png">Outstanding Paper Award at SITE, Society for Information Technology &amp; Teacher Education, 2021.</a></li>
+                <li><a target="_blank" href="images/awards/websci-2019.jpg">Best Paper Award (Honorable Mention) at WebSci, 11th ACM Conference on Web Science, 2019.</a></li>
+                <li><a target="_blank" href="images/awards/ecir-2019.jpg">Best Poster Award at the 41st European Conference on Information Retrieval (ECIR), 2019.</a></li>
+                <li><a target="_blank" href="images/awards/socinfo-2019.jpg">Nomination for Best Paper at SocInfo, Social Informatics, 2019.</a></li>
+                <li>One of the 5 recipients of the SIGWEB student travel grant for attending WebSci, 2019.</li>
+                <li><a target="_blank" href="https://www.microsoft.com/en-us/research/event/microsoft-research-india-summer-school-artificial-social-intelligence/">Runner-up at Artificial Social Intelligence (ASI), a summer workshop at Microsoft Research India, 2017.</a></li>
+                <li>Batch Topper: Joint Recipient of the Institute Silver Medal in Computer Science and Engineering at IIT Kharagpur.</li>
+                <li>Batch Topper: Secured distinction with 97.5% in ISC (High School or Class 12).</li>
             </ul>
             </div>
 
@@ -991,6 +1052,15 @@
           <div class="row">
             <div class="col-md-12">
               <ul class="skills-list">
+                <li>Generalization</li>
+                <li>Evaluation</li>
+                <li>Personalization</li>
+                <li>Agentic AI</li>
+                <li>Large Language Models</li>
+                <li>Graph Representation Learning</li>
+                <li>Discourse and Pragmatics</li>
+                <li>Information Extraction</li>
+                <li>Social Networks</li>
                 <li>Natural Language Processing</li>
                 <li>Information Retrieval</li>
                 <li>Social Computing</li>
@@ -1004,13 +1074,16 @@
                 <li>Language and Statistics</li>
                 <li>Question Answering</li>
                 <li>Intermediate Statistics</li>
-                <li>Dialogue Systems</li>
+                <li>Dialogue and Discourse Processing</li>
                 <li>Python, R, Java, SQL</li>
                 <li>PyTorch, TensorFlow</li>
                 <li>Bash, Git, Linux</li>
                 <li>Transformers, Hugging Face</li>
                 <li>Scikit-Learn, NumPy, Pandas</li>
                 <li>LangChain, vLLMs</li>
+                <li>DeepSpeed, Keras, igraph</li>
+                <li>Jupyter, RStudio, LaTeX, Slurm</li>
+                <li>C, C++</li>
               </ul>
             </div>
           </div>

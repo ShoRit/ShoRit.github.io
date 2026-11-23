@@ -45,26 +45,11 @@ function internal_link() {
 }
 
 function sizing(windowWidth) {
-    //alert(windowWidth);
-    if(windowWidth < 1024){ // desktop size
-        $('.twittertop').hide();
-        $('.twitterlow').show();
-    } else {
-        $('.twittertop').show();
-        $('.twitterlow').hide();
-    }
-
-    if(windowWidth <= 480){ // ipad:768, Nexus10:800, 480
-        $('.allshow').hide(); //
-        $('.noshow').show();
-        $('.expandshow').show();
-        $('.collapseshow').hide();
-    } else {
-        $('.allshow').show();
-        $('.noshow').hide();
-        $('.expandshow').hide();
-        $('.collapseshow').hide();
-    }
+    // Show every section at all widths (no collapsed accordion on phones).
+    $('.allshow').show();
+    $('.noshow').hide();
+    $('.expandshow').hide();
+    $('.collapseshow').hide();
 }
 
 jQuery(document).ready(function($) {
